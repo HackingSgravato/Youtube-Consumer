@@ -1,0 +1,25 @@
+{
+  "name": "youtube-consumer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HackingSgravato/Youtube-Consumer.git"
+  },
+  "author": "Paolo Delfino",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/HackingSgravato/Youtube-Consumer/issues"
+  },
+  "homepage": "https://github.com/HackingSgravato/Youtube-Consumer#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "ytdl-core": "^4.11.2"
+  }
+}

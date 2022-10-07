@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Youtube Consumer</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark-icons.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-light navbar-expand-md d-flex justify-content-center" style="margin-bottom: 11px;">
+            <div class="container-fluid justify-content-center">
+                <ul class="navbar-nav flex-row">
+                    <li class="nav-item"><a class="btn btn-info btn-sm" role="button" href="https://github.com/HackingSgravato" target="_blank" rel="author">Github</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col">
+                <p class="text-center text-secondary">Digit the video name and select the right one and automatically the video will be downloaded.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container d-md-flex justify-content-md-center pb-5 pt-5">
+        <div class="col-md-9 col-xl-8 ml-auto mr-auto">
+            <form>
+                <div class="align-items-center form-row">
+                    <div class="col-sm form-group mb-3"><input class="form-control form-control ps-4 pe-4 rounded-pill" type="text" autofocus="" placeholder="Search..." name="Search"></div>
+                    <div class="col-sm-auto text-end form-group mb-3"><button class="btn btn-primary ps-4 pe-4 rounded-pill" type="submit" onclick="perform_search();"><i class="fa fa-search"></i></button></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <div><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-1" href="#collapse-1" role="button" id="show_results_button" onclick="show_alert_if_no_results();">Toggle Results</a>
+                <div class="collapse" id="collapse-1">
+                    <div class="col" id="search_results_container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="zero_results_modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Info</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Zero results</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Ok</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
