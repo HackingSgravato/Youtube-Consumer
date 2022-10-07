@@ -1,5 +1,5 @@
 // site url (don't include final slash)
-const site_url = 'http://192.168.1.184:8000';
+const site_url = 'https://youtube-consumer.herokuapp.com';
 const key = 'AIzaSyA0P39w6XbeC0SMptn7WX9i6BkgheFQD-Y';
 
 function draw_result_card(video_id, video_title, video_thumbnail, publisher_name){
